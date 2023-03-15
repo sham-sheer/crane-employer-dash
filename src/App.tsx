@@ -281,8 +281,8 @@ export default function App() {
                   y2="474.645"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#9089FC" />
-                  <stop offset={1} stopColor="#FF80B5" />
+                  <stop stopColor="#1D976C" />
+                  <stop offset={1} stopColor="#93F9B9" />
                 </linearGradient>
               </defs>
             </svg>
@@ -331,15 +331,15 @@ export default function App() {
               />
               <defs>
                 <linearGradient
-                  id="b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1"
+                  id="9b2541ea-d39d-499b-bd42-aeea3e93f5ff"
                   x1="1155.49"
                   x2="-78.208"
                   y1=".177"
                   y2="474.645"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#9089FC" />
-                  <stop offset={1} stopColor="#FF80B5" />
+                  <stop stopColor="#1D976C" />
+                  <stop offset={1} stopColor="#93F9B9" />
                 </linearGradient>
               </defs>
             </svg>
@@ -505,15 +505,15 @@ export default function App() {
               />
               <defs>
                 <linearGradient
-                  id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
+                  id="9b2541ea-d39d-499b-bd42-aeea3e93f5ff"
                   x1="1155.49"
                   x2="-78.208"
                   y1=".177"
                   y2="474.645"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#9089FC" />
-                  <stop offset={1} stopColor="#FF80B5" />
+                  <stop stopColor="#1D976C" />
+                  <stop offset={1} stopColor="#93F9B9" />
                 </linearGradient>
               </defs>
             </svg>
@@ -707,15 +707,15 @@ export default function App() {
               />
               <defs>
                 <linearGradient
-                  id="191ef669-4d29-44ea-9496-5d65eb27150d"
-                  x1="1220.59"
-                  x2="-85.053"
-                  y1="198.898"
-                  y2="-7.05"
+                  id="9b2541ea-d39d-499b-bd42-aeea3e93f5ff"
+                  x1="1155.49"
+                  x2="-78.208"
+                  y1=".177"
+                  y2="474.645"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#9089FC" />
-                  <stop offset={1} stopColor="#FF80B5" />
+                  <stop stopColor="#1D976C" />
+                  <stop offset={1} stopColor="#93F9B9" />
                 </linearGradient>
               </defs>
             </svg>
@@ -734,15 +734,15 @@ export default function App() {
               />
               <defs>
                 <linearGradient
-                  id="23e1b96e-c791-45fa-975a-a04d29498207"
+                  id="9b2541ea-d39d-499b-bd42-aeea3e93f5ff"
                   x1="1155.49"
                   x2="-78.208"
                   y1=".177"
                   y2="474.645"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#9089FC" />
-                  <stop offset={1} stopColor="#FF80B5" />
+                  <stop stopColor="#1D976C" />
+                  <stop stopColor="#93F9B9" />
                 </linearGradient>
               </defs>
             </svg>
