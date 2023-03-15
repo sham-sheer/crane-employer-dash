@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import JobForm from "./pages/JobForm";
 import { QueryClient, QueryClientProvider } from "react-query";
 import App from "./App";
+import Interview from "./pages/Interview";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "job-create/:id",
         element: <JobForm />,
+      },
+      {
+        path: "interview",
+        element: <Interview />,
       },
     ],
   },

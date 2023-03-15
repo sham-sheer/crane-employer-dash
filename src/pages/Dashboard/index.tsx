@@ -37,14 +37,8 @@ const navigation = [
     current: false,
   },
   {
-    name: "Projects",
-    href: "#",
-    icon: FolderIcon,
-    current: false,
-  },
-  {
     name: "Interviews",
-    href: "#",
+    href: "/dash/interview",
     icon: CalendarIcon,
     current: false,
   },
@@ -128,6 +122,7 @@ export default function Dashboard() {
                   <div className="mt-5">
                     <nav className="space-y-1 px-2">
                       <a
+                        onClick={() => navigate("/dash/job-create/1")}
                         key="Create Job"
                         href="#"
                         className={classNames(
@@ -197,15 +192,15 @@ export default function Dashboard() {
               <nav className="space-y-1 px-2">
                 <a
                   key="Create Job"
-                  href="#"
+                  onClick={() => navigate("/dash/job-create/1")}
                   className={classNames(
-                    "bg-teal-500 text-gray-300 hover:bg-cyan-700 hover:text-white",
+                    "bg-teal-500 text-white hover:bg-cyan-700 hover:text-white",
                     "group flex items-center rounded-md px-2 py-2 text-base font-medium"
                   )}
                 >
                   <PlusIcon
                     className={classNames(
-                      "text-white-400 group-hover:text-gray-300",
+                      "text-white group-hover:text-gray-300",
                       "mr-4 h-6 w-6 flex-shrink-0"
                     )}
                     aria-hidden="true"

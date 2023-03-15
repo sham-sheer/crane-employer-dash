@@ -3,6 +3,7 @@ import {
   CheckCircleIcon,
   ChevronRightIcon,
 } from "@heroicons/react/20/solid";
+import { useNavigate } from "react-router-dom";
 import Stats from "../../components/Stats";
 const jobs = [
   {
@@ -192,6 +193,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div>
       {/* Page header */}
@@ -240,6 +242,7 @@ export default function Home() {
             </div>
             <div className="mt-6 flex space-x-3 md:mt-0 md:ml-4">
               <button
+                onClick={() => navigate("/dash/job-create/1")}
                 type="button"
                 className="inline-flex items-center rounded-md bg-cyan-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
               >

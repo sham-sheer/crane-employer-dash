@@ -1,31 +1,42 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import { DocumentMagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import {
   CreditCardIcon,
   KeyIcon,
   SquaresPlusIcon,
   UserCircleIcon,
   UserGroupIcon,
+  ComputerDesktopIcon,
+  Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Account", href: "#", icon: UserCircleIcon, current: true },
-  { name: "Password", href: "#", icon: KeyIcon, current: false },
-  { name: "Plan & Billing", href: "#", icon: CreditCardIcon, current: false },
-  { name: "Team", href: "#", icon: UserGroupIcon, current: false },
-  { name: "Integrations", href: "#", icon: SquaresPlusIcon, current: false },
+  { name: "Intro", href: "#", icon: UserCircleIcon, current: true },
+  {
+    name: "Details",
+    href: "#",
+    icon: DocumentMagnifyingGlassIcon,
+    current: false,
+  },
+  { name: "Compensation", href: "#", icon: CreditCardIcon, current: false },
+  { name: "Description", href: "#", icon: UserGroupIcon, current: false },
+  {
+    name: "Applicant Preferences",
+    href: "#",
+    icon: Cog6ToothIcon,
+    current: false,
+  },
+  {
+    name: "Pre-screening",
+    href: "#",
+    icon: ComputerDesktopIcon,
+    current: false,
+  },
+  {
+    name: "Review",
+    href: "#",
+    icon: SquaresPlusIcon,
+    current: false,
+  },
 ];
 
 function classNames(...classes: string[]) {
@@ -43,7 +54,7 @@ export default function Example() {
               href={item.href}
               className={classNames(
                 item.current
-                  ? "bg-gray-50 text-indigo-700 hover:bg-white hover:text-indigo-700"
+                  ? "bg-gray-50 text-cyan-700 hover:bg-white hover:text-cyan-700"
                   : "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
                 "group flex items-center rounded-md px-3 py-2 text-sm font-medium"
               )}
@@ -52,7 +63,7 @@ export default function Example() {
               <item.icon
                 className={classNames(
                   item.current
-                    ? "text-indigo-500 group-hover:text-indigo-500"
+                    ? "text-cyan-500 group-hover:text-cyan-500"
                     : "text-gray-400 group-hover:text-gray-500",
                   "-ml-1 mr-3 h-6 w-6 flex-shrink-0"
                 )}
@@ -95,7 +106,7 @@ export default function Example() {
                       name="username"
                       id="username"
                       autoComplete="username"
-                      className="block w-full min-w-0 flex-grow rounded-none rounded-r-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full min-w-0 flex-grow rounded-none rounded-r-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -112,7 +123,7 @@ export default function Example() {
                       id="about"
                       name="about"
                       rows={3}
-                      className="mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6"
+                      className="mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:py-1.5 sm:text-sm sm:leading-6"
                       placeholder="you@example.com"
                       defaultValue={""}
                     />
@@ -168,7 +179,7 @@ export default function Example() {
                       <div className="flex text-sm text-gray-600">
                         <label
                           htmlFor="file-upload"
-                          className="relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500"
+                          className="relative cursor-pointer rounded-md bg-white font-medium text-cyan-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-cyan-500 focus-within:ring-offset-2 hover:text-cyan-500"
                         >
                           <span>Upload a file</span>
                           <input
@@ -191,7 +202,7 @@ export default function Example() {
             <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
               <button
                 type="submit"
-                className="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="inline-flex justify-center rounded-md bg-cyan-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
               >
                 Save
               </button>
@@ -224,7 +235,7 @@ export default function Example() {
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
 
@@ -240,7 +251,7 @@ export default function Example() {
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
 
@@ -256,7 +267,7 @@ export default function Example() {
                     name="email-address"
                     id="email-address"
                     autoComplete="email"
-                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
 
@@ -271,7 +282,7 @@ export default function Example() {
                     id="country"
                     name="country"
                     autoComplete="country-name"
-                    className="mt-2 block w-full rounded-md border-0 bg-white py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 bg-white py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   >
                     <option>United States</option>
                     <option>Canada</option>
@@ -291,7 +302,7 @@ export default function Example() {
                     name="street-address"
                     id="street-address"
                     autoComplete="street-address"
-                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
 
@@ -307,7 +318,7 @@ export default function Example() {
                     name="city"
                     id="city"
                     autoComplete="address-level2"
-                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
 
@@ -323,7 +334,7 @@ export default function Example() {
                     name="region"
                     id="region"
                     autoComplete="address-level1"
-                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
 
@@ -339,7 +350,7 @@ export default function Example() {
                     name="postal-code"
                     id="postal-code"
                     autoComplete="postal-code"
-                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -347,7 +358,7 @@ export default function Example() {
             <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
               <button
                 type="submit"
-                className="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="inline-flex justify-center rounded-md bg-cyan-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
               >
                 Save
               </button>
@@ -379,7 +390,7 @@ export default function Example() {
                         id="comments"
                         name="comments"
                         type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                        className="h-4 w-4 rounded border-gray-300 text-cyan-600 focus:ring-cyan-500"
                       />
                     </div>
                     <div className="ml-3 text-sm leading-6">
@@ -401,7 +412,7 @@ export default function Example() {
                           id="candidates"
                           name="candidates"
                           type="checkbox"
-                          className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          className="h-4 w-4 rounded border-gray-300 text-cyan-600 focus:ring-cyan-500"
                         />
                       </div>
                       <div className="ml-3 text-sm leading-6">
@@ -424,7 +435,7 @@ export default function Example() {
                           id="offers"
                           name="offers"
                           type="checkbox"
-                          className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          className="h-4 w-4 rounded border-gray-300 text-cyan-600 focus:ring-cyan-500"
                         />
                       </div>
                       <div className="ml-3 text-sm leading-6">
@@ -456,7 +467,7 @@ export default function Example() {
                       id="push-everything"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      className="h-4 w-4 border-gray-300 text-cyan-600 focus:ring-cyan-500"
                     />
                     <label htmlFor="push-everything" className="ml-3">
                       <span className="block text-sm font-medium leading-6 text-gray-900">
@@ -469,7 +480,7 @@ export default function Example() {
                       id="push-email"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      className="h-4 w-4 border-gray-300 text-cyan-600 focus:ring-cyan-500"
                     />
                     <label htmlFor="push-email" className="ml-3">
                       <span className="block text-sm font-medium leading-6 text-gray-900">
@@ -482,7 +493,7 @@ export default function Example() {
                       id="push-nothing"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      className="h-4 w-4 border-gray-300 text-cyan-600 focus:ring-cyan-500"
                     />
                     <label htmlFor="push-nothing" className="ml-3">
                       <span className="block text-sm font-medium leading-6 text-gray-900">
@@ -496,7 +507,7 @@ export default function Example() {
             <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
               <button
                 type="submit"
-                className="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="inline-flex justify-center rounded-md bg-cyan-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
               >
                 Save
               </button>
