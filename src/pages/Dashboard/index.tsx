@@ -151,7 +151,7 @@ export default function Dashboard() {
                       {navigation.map((item) => (
                         <a
                           key={item.name}
-                          href={item.href}
+                          onClick={() => navigate(item.href)}
                           className={classNames(
                             item.current
                               ? "bg-cyan-900 text-white"
