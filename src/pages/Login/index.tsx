@@ -35,7 +35,7 @@ export default function Login() {
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
             className="mx-auto h-12 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=600"
+            src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_100/4877670/851420_427759.png"
             alt="Your Company"
           />
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
